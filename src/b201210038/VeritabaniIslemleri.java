@@ -20,7 +20,7 @@ public class VeritabaniIslemleri implements IVeritabaniIslemleri {
 
         try {
             conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/nyat",
-                    "your_username", "your_password");
+                    "your_password", "your_username");
             if (conn != null)
                 System.out.println("Veritabanına bağlandı!");
             else
